@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,400;1,100;1,400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.navbar {
+  background-color: #f72585;
+  color: #fff;
+  height: 60px;
+}
+
+.navbar .logo {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: lightblue;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul {
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  background-color: #3f37c9;
+  color: #fff;
+  min-height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header h1 {
+  font-size: 1.5em;
+}
+
+.header svg {
+  width: 100px;
+}
+
+.header .container {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.frontend-logos {
+  display: flex;
+  gap: 10px;
+}
+
+.summary-cards .container {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.summary-cards img,
+.summary-cards svg {
+  max-width: 180px;
+  display: block;
+  margin: auto;
+}
+
+.card {
+  flex: 1 0 21%;
+  background-color: #6f4ebd;
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px 10px;
+  margin: 20px 10px;
+  -webkit-box-shadow: 9px 2px 13px 2px rgba(0, 0, 0, 0.35);
+  box-shadow: 9px 2px 13px 2px rgba(0, 0, 0, 0.35);
+  padding: 15px 20px;
+}
+
+.card:nth-child(even) {
+  background-color: #ff5c8a;
+}
+
+.card h2 {
+  text-align: center;
+}
+
+.card p {
+  text-align: start;
+  margin-bottom: 8px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+  .frontend-logos {
+    flex-direction: column;
+  }
+
+  .navbar {
+    height: auto;
+  }
+
+  .navbar .container {
+    flex-direction: column;
+    padding: 25px 0px;
+  }
+
+  .summary-cards .container {
+    flex-direction: column;
+  }
+
+  .summary-cards img,
+  .summary-cards svg {
+    max-width: none;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header .container {
+    margin: 25px 0px;
+  }
+
+  .header h1 {
+    text-align: center;
+  }
+
+  .header svg {
+    width: 100%;
+  }
+}
